@@ -10,12 +10,12 @@ import {
   ScreenHeaderBtn,
 } from "../components";
 
+
 const Home = () => {
   const router = useRouter();
   const [searchTerm, setSearchTerm] = useState("");
   const handlePress =()=>{
-    console.log('ss');
-    router.push('/modal')
+    router.push('/contacts/contacts');
   }
 
   return (
@@ -31,6 +31,7 @@ const Home = () => {
           headerRight: () => (
             <ScreenHeaderBtn iconUrl={images.profile} dimension={"100%"} />
           ),
+          
         }}
       />
       <ScrollView showsVerticalScrollIndicator={false}>
